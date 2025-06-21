@@ -1,9 +1,9 @@
 import requests
 import os
 import time
-
+os.system("clear")
 print("[?] Installing libs for program...")
-os.system("sudo apt install xz-utils curl")
+os.system("sudo apt -y install xz-utils curl")
 
 i = input("need to install zapret? (0 or 1): ")
 if i == "1":
