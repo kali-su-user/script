@@ -55,8 +55,6 @@ else:
         os.system('''curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list''')
         os.system('''sudo apt-get -y update && sudo apt-get -y install spotify-client''')
-    print("[?] Installing GIMP ...")
-    os.system("sudo apt -y install gimp")
     print("[+] Deleting all temp files ...")
     os.system("rm tg.tar.xz discord-aaa.deb")
     print("[+] Goodbye User!")
